@@ -17,7 +17,7 @@ This is for educational purposes only.
 This project is going to be all about the journey, and not so much about the destination.
 We'll try to document the journey through a diary and of course through my Git commits. Maybe someday we'll make a blog, where the journey can me documented more thorough.
 
-## Decisions
+## Decisions, decisions
 Language and framework. We've thought of four different langauges/frameworks, that we see suitable for this small project.
   * ASP.NET Core MVC (C#). We're really fond of this framework and language. It is strongly typed, and we have plenty of experience with it. Not so much with the Core part though.
   * Node.js (TypeScript). We've some experience with this. TypeScript is a great language, that introduces types to JavaScript.
