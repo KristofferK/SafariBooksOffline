@@ -27,7 +27,7 @@ Backend language and framework. We've thought of four different langauges/framew
 ASP.NET Core MVC and Node.js with TypeScript seems like great candidates. We however suddenly remember how much my teacher dislikes PHP. Therefore we decide to use PHP for this project.
 
 For front end, we shortly thought about using Angular(5). We however don't really think there will be much going on regarding the front end, and decide not to introduce any framework for the view. We might introduce Bootstrap for styling.
-We will - if possible - avoid introducing jQuery to our project, and keep it to vanilla JS. The primary focus for this project, at least for the first iteration, will be the backend.
+We will - if possible - avoid introducing jQuery to our project, and keep it to vanilla JS. The primary focus for this project, at least for the MVP, will be the backend.
 
 ## Implemented
 * Nothing
