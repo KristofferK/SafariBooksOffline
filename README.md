@@ -23,6 +23,7 @@ Language and framework. We've thought of four different langauges/frameworks, th
   * Node.js (TypeScript). We've some experience with this. TypeScript is a great language, that introduces types to JavaScript.
   * Django (Python). Not strongly typed. We've however not been doing much Python lately, so could be a change of getting it brushed up. We've never used the Django framework. Maybe it's worth learning?
   * PHP. Not really much to say. Not strongly typed and over all a somewhat bad language. My teacher hates it.
+
 ASP.NET Core MVC and Node.js with TypeScript seems like great candidates. We however suddenly remember how much my teacher dislikes PHP. Therefore we decide to use PHP for this project.
 
 ## Implemented
