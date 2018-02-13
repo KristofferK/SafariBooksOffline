@@ -21,8 +21,12 @@ This is for educational purposes only.
 * Format the text paragraphs in a way that makes reading faster.
 * Somehow show the user how far he is in the chapter, since we won't have page numbers.
 * Download chapters to local storage through the website
-  * For this the website has to be able to register an account, and
-  * Log into the newly register account,
-  * Download the HTML source for the specified chapter.
+  * This could be implemented in a way, where the website itself registers a new account.
+    * For this the website has to be able to register an account, and
+    * Log into the newly register account, and
+    * Download the HTML source for the specified chapter.
+  * Or it could be implemented in a way, where the user himself has to enter his credentials. In this case the website must be able to
+    * Log into the users account, and
+    * Download the HTML source for the specified chaper.
 * Get a list of downloaded chapters
 * Load a download chapter into the view.
