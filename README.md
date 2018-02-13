@@ -24,9 +24,9 @@ This is for educational purposes only.
   * This could be implemented in a way, where the website itself registers a new account.
     * For this the website has to be able to register an account, and
     * Log into the newly register account, and
-    * Download the HTML source for the specified chapter.
+    * Download the HTML source for the user-specified chapter.
   * Or it could be implemented in a way, where the user himself has to enter his credentials. In this case the website must be able to
     * Log into the users account, and
-    * Download the HTML source for the specified chaper.
+    * Download the HTML source for the user-specified chaper.
 * Get a list of downloaded chapters
 * Load a download chapter into the view.
