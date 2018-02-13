@@ -20,7 +20,7 @@ This is for educational purposes only.
 * Load local HTML file in an asynchronous manner.
 * Format the text paragraphs in a way that makes reading faster.
 * Somehow show the user how far he is in the chapter, since we won't have page numbers.
-* Download chapters to local storage through the website
+* Download chapters to local storage through the website for offline use. We decide not to download the images, despite this resulting in us not being able to see them without internet access.
   * This could be implemented in a way, where the website itself registers a new account.
     * For this the website has to be able to register an account, and
     * Log into the newly register account, and
