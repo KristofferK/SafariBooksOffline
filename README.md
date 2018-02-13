@@ -19,3 +19,10 @@ This is for educational purposes only.
 ## To be implemented
 * Load local HTML file in an asynchronous manner.
 * Format the text paragraphs in a way that makes reading faster.
+* Somehow show the user how far he is in the chapter, since we won't have page numbers.
+* Download chapters to local storage through the website
+  * For this the website has to be able to register an account, and
+  * Log into the newly register account,
+  * Download the HTML source for the specified chapter.
+* Get a list of downloaded chapters
+* Load a download chapter into the view.
