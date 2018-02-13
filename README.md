@@ -2,7 +2,7 @@
 Taking SafariBooksOnline.com off the web.
 
 ## Abstract
-Using PHP we'd like to be able to access some specified books from SafariBooksOnline.com without having internet access.
+Using a (offline) website we'd like to be able to access some specified books from SafariBooksOnline.com. We don't want to be dependenet on having internet access.
 
 ## Purpose
 SafariBooksOnline.com offers a range of educational for a small monthly fee. It does however require you to have internet access.
@@ -12,6 +12,18 @@ We'd like to examine whether or not it's possible to make a local website, where
 In later versions the local website, should be able to download chapters to local storage itself. This will of course only be possible, when having internet access.
 
 This is for educational purposes only.
+
+## The journey
+This project is going to be all about the journey, and not so much about the destination.
+We'll try to document the journey through a diary and of course through my Git commits. Maybe someday we'll make a blog, where the journey can me documented more thorough.
+
+## Decisions
+Language and framework. We've thought of four different langauges/frameworks, that we see suitable for this small project.
+  * ASP.NET Core MVC (C#). We're really fond of this framework and language. It is strongly typed, and we have plenty of experience with it. Not so much with the Core part though.
+  * Node.js (TypeScript). We've some experience with this. TypeScript is a great language, that introduces types to JavaScript.
+  * Django (Python). Not strongly typed. We've however not been doing much Python lately, so could be a change of getting it brushed up. We've never used the Django framework. Maybe it's worth learning?
+  * PHP. Not really much to say. Not strongly typed and over all a somewhat bad language. My teacher hates it.
+ASP.NET Core MVC and Node.js with TypeScript seems like great candidates. We however suddenly remember how much my teacher dislikes PHP. Therefore we decide to use PHP for this project.
 
 ## Implemented
 * Nothing
