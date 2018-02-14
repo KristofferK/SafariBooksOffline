@@ -6,7 +6,7 @@ Using a (offline) website we'd like to be able to access some specified books fr
 
 ## Purpose
 SafariBooksOnline.com offers a range of educational for a small monthly fee. It does however require you to have internet access.
-Furthermore we find the paragraphs to be too wide, making it harder to read and drastically reducing my reading speed. We also find the page to be too bright.
+Furthermore we find the paragraphs to be too wide, making it harder to read and drastically reducing our reading speed. We also find the page to be too bright.
 
 We'd like to examine whether or not it's possible to make a local website, where we can load these HTML files in a seamlessly way.
 In later versions the local website, should be able to download chapters to local storage itself. This will of course only be possible, when having internet access.
@@ -15,16 +15,16 @@ This is for educational purposes only.
 
 ## The journey
 This project is going to be all about the journey, and not so much about the destination.
-We'll try to document the journey through a diary and of course through my Git commits. Maybe someday we'll make a blog, where the journey can me documented more thorough.
+We'll try to document the journey through a diary and of course through our Git commits. Maybe someday we'll make a blog, where the journey can me documented more thorough.
 
 ## Decisions, decisions
 Backend language and framework. We've thought of four different langauges/frameworks, that we see suitable for this small project.
   * ASP.NET Core MVC (C#). We're really fond of this framework and language. It is strongly typed, and we have plenty of experience with it. Not so much with the Core part though.
   * Node.js (TypeScript). We've some experience with this. TypeScript is a great language, that introduces types to JavaScript.
   * Django (Python). Not strongly typed. We've however not been doing much Python lately, so could be a change of getting it brushed up. We've never used the Django framework. Maybe it's worth learning?
-  * PHP. Not really much to say. Not strongly typed and over all a somewhat bad language. My teacher hates it.
+  * PHP. Not really much to say. Our teacher hates it. Not strongly typed and over all a somewhat bad language.
 
-ASP.NET Core MVC and Node.js with TypeScript seems like great candidates. We however suddenly remember how much my teacher dislikes PHP. Therefore we decide to use PHP for this project.
+ASP.NET Core MVC and Node.js with TypeScript seems like great candidates. We however suddenly remember how much our teacher dislikes PHP. Therefore we decide to use PHP for this project.
 
 For front end, we shortly thought about using Angular(5). We however don't really think there will be much going on regarding the front end, and decide not to introduce any framework for the view. We might introduce Bootstrap for styling.
 We will - if possible - avoid introducing jQuery to our project, and keep it to vanilla JS. The primary focus for this project, at least for the MVP, will be the backend.
