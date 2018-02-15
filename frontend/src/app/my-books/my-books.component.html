@@ -17,7 +17,7 @@
         <h5>{{selectedBook.title}}</h5>
 
         <div class="btn-group">
-          <a *ngFor="let chapter of selectedBook.chapters" class="btn btn-info" href="#" (click)="chapterSelected($event, chapter)">{{chapter.title}}</a>
+          <a *ngFor="let chapter of selectedBook.chapters" [ngClass]="(chapter.active) ? 'btn btn-success' : 'btn btn-info'" href="#" [attr.checked]="value ? 'checked' : null" (click)="chapterSelected($event, chapter)">{{chapter.title}}</a>
         </div>
       </div>
     </div>
@@ -26,6 +26,16 @@
   <div class="row">
     <div class="col-12 col-md-8 offset-md--2 col-lg-6 offset-lg-3" id="source-wrapper">
       <div [innerHTML]="source" id="source"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text-center">
+      <div *ngIf="selectedBook">
+        <div class="btn-group">
+          <a *ngFor="let chapter of selectedBook.chapters" [ngClass]="(chapter.active) ? 'btn btn-success' : 'btn btn-info'" href="#" [attr.checked]="value ? 'checked' : null" (click)="chapterSelected($event, chapter)">{{chapter.title}}</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
