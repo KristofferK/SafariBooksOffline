@@ -3,6 +3,7 @@ require_once('func/DataManager.class.php');
 $dataManager = new DataManager();
 
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
 try {
     $books = $dataManager->getBookList();
     echo json_encode(['success' => true, 'data' => $books]);
