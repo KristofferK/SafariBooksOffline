@@ -1,7 +1,31 @@
 <div class="container">
   <div class="row">
-    <div class="col-12">
+    <div class="col-12 text-center">
       <h3>My books</h3>
+
+      <div class="dropdown">
+        <a class="btn btn-info dropdown-toggle" href="#" id="book-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Please select a book
+        </a>
+        <div class="dropdown-menu" aria-labelledby="book-dropdown">
+            <a *ngFor="let book of books" class="dropdown-item" href="#" (click)="bookSelected($event, book)">{{book.title}}</a>
+        </div>
+      </div>
+
+      <div *ngIf="selectedBook">
+        <br/>
+        <h5>{{selectedBook.title}}</h5>
+
+        <div class="btn-group">
+          <a *ngFor="let chapter of selectedBook.chapters" class="btn btn-info" href="#" (click)="chapterSelected($event, chapter)">{{chapter.title}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md--2 col-lg-6 offset-lg-3" id="source-wrapper">
+      <div [innerHTML]="source" id="source"></div>
     </div>
   </div>
 </div>

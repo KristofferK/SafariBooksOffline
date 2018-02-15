@@ -1,0 +1,36 @@
+#source-wrapper {  
+  padding:4em;
+  background:#FCFCFC;
+  margin-top:2em;
+  margin-bottom:2em;
+  color:#333;
+}
+
+#source {
+  font-family: Georgia,"Droid Serif",Times,serif;
+  font-size:1.18em;
+}
+
+#source div.sidebar {
+  border: 1px dotted #ddd;
+  padding: 1em 2em!important;
+  background-color: #eee;
+  box-shadow: 0 5px 10px #eee;
+  margin: 0.5em!important;
+}
+
+#source p {
+  line-height: 1.65em!important;
+  margin: .75em 0 1.25em!important;
+}
+
+#source h1, #output h2, #output h3 {
+  font-family: "source sans pro",sans-serif,AvenirNextCondensed-Medium,HelveticaNeue-CondensedBold,"Droid Sans",Helvetica,Arial,sans-serif!important;
+  line-height: 1.1;
+  font-style: normal;
+  font-weight: 500;
+  color: #404040;
+  margin: 1.5em 0 .35em!important;
+  background-color: transparent;
+  word-wrap: break-word;
+}
