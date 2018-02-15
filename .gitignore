@@ -1,2 +1,4 @@
 backend/local-storage/downloads/*.html
 backend/local-storage/map.json
+
+frontend/node_modules/*
