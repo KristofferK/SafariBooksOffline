@@ -3,3 +3,6 @@ backend/local-storage/map.json
 
 frontend/node_modules/*
 frontend/dist/*
+
+frontend/src/app/services/book.service.ts
+frontend/src/app/services/book.service.ts
