@@ -24,6 +24,16 @@ export class BookService {
     .toPromise();
   }
 
+  public async addChapter(bookId: string, title: string, link: string) {
+    const payload = new FormData();
+    payload.append('bookId', bookId);
+    payload.append('title', title);
+    payload.append('link', link);
+    return this.http.post(environment.apiUrl + 'add-chapter/', payload)
+    .map((res: Response) => (<MessageResponse>res.json()))
+    .toPromise();
+  }
+
   public async getBook(bookId: string): Promise<Book> {
     return this.http.get(environment.apiUrl + 'get-book/' + bookId)
     .map((res: Response) => (<Book>res.json()['data']))

@@ -14,6 +14,7 @@ export class BookManagerComponent implements OnInit, OnDestroy {
   private booksSubscription: Subscription;
   public books: Book[];
   public bookManagerResponse: MessageResponse;
+  public chapterManagerResponse: MessageResponse;
 
   constructor(private bookService: BookService, private titleService: Title) { }
 
@@ -27,14 +28,12 @@ export class BookManagerComponent implements OnInit, OnDestroy {
 
   public async addBook(e: Event, title: string) {
     e.preventDefault();
-    const response = await this.bookService.addBook(title);
-    this.bookManagerResponse = response;
+    this.bookManagerResponse = await this.bookService.addBook(title);
   }
 
   public async addChapter(e: Event, bookId: string, title: string, link: string) {
     e.preventDefault();
-    console.log(bookId, title, link);
-    alert('Not implemented');
+    this.chapterManagerResponse = await this.bookService.addChapter(bookId, title, link);
   }
 
   ngOnDestroy() {
