@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <h3>Book manager</h3>
+      <form>
+        <div class="form-group">
+          <label for="bookTitle">Book title</label>
+          <input type="text" class="form-control" id="bookTitle" #bookTitle/>
+        </div>
+
+        <button type="submit" class="btn btn-info" (click)="addBook($event, bookTitle.value)">Add book</button>
+      </form>
+
+      <span *ngIf="bookManagerResponse" [ngClass]="bookManagerResponse.success ? 'success' : 'error'">{{bookManagerResponse.message}}</span>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <h3>Chapter manager</h3>
+      <form>
+        <div class="form-group">
+          <label for="chapterBook">Book</label>
+          <select class="form-control" id="chapterBook" #chapterBook>
+            <option *ngFor="let book of books" [value]="book.id">{{book.title}}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="chapterTitle">Title of chapter</label>
+          <input type="text" class="form-control" placeholder="Ch03" id="chapterTitle" #chapterTitle/>
+        </div>
+
+        <div class="form-group">
+          <label for="chapterLink">Link to chapter</label>
+          <input type="link" class="form-control" placeholder="https://www.safaribooksonline.com/library/view/enterprise-integration-the/032122390X/ch04.html" id="chapterLink" #chapterLink/>
+        </div>
+      </form>
+
+      <button type="submit" class="btn btn-info" (click)="addChapter($event, chapterBook.value, chapterTitle.value, chapterLink.value)">Add chapter</button>
+
+      <span *ngIf="chapterManagerResponse" [ngClass]="chapterManagerResponse.success ? 'success' : 'error'">{{chapterManagerResponse.message}}</span>
+    </div>
+  </div>
+</div>

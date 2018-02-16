@@ -20,6 +20,7 @@ export class MyBooksComponent implements OnInit, OnDestroy {
   constructor(private bookService: BookService, private titleService: Title) { }
 
   async ngOnInit() {
+    this.titleService.setTitle('Book manager');
     this.booksSubscription = this.bookService.books$.subscribe(books => {
       this.books = books;
     });

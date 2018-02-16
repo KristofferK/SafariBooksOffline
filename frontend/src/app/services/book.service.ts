@@ -1,18 +1,27 @@
-import { Subject } from 'rxjs/subject';
+import { ReplaySubject } from 'rxjs/ReplaySubject';
 import { Http, Response } from '@angular/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import { Book } from '../_models/book';
 import { environment } from '../../environments/environment';
+import { MessageResponse } from '../_models/message-response';
 
 @Injectable()
 export class BookService {
-  public books$ = new Subject<Book[]>();
+  public books$ = new ReplaySubject<Book[]>();
 
   constructor(private http: Http) {
     this._getBooks().then(books => {
       this.books$.next(books);
     });
+  }
+
+  public async addBook(title: string): Promise<MessageResponse> {
+    const payload = new FormData();
+    payload.append('title', title);
+    return this.http.post(environment.apiUrl + 'add-book/', payload)
+    .map((res: Response) => (<MessageResponse>res.json()))
+    .toPromise();
   }
 
   public async getBook(bookId: string): Promise<Book> {

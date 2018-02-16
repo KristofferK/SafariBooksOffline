@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { MyBooksComponent } from './my-books/my-books.component';
 import { BookService } from './services/book.service';
+import { BookManagerComponent } from './book-manager/book-manager.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { BookService } from './services/book.service';
     AppComponent,
     FrontPageComponent,
     NavbarComponent,
-    MyBooksComponent
+    MyBooksComponent,
+    BookManagerComponent
   ],
   imports: [
     BrowserModule,
