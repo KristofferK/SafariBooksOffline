@@ -33,6 +33,10 @@ export class BookManagerComponent implements OnInit, OnDestroy {
 
   public async addChapter(e: Event, bookId: string, title: string, link: string) {
     e.preventDefault();
+    const response = new MessageResponse();
+    response.message = 'Loading... Please wait.';
+    response.success = true;
+    this.chapterManagerResponse = response;
     this.chapterManagerResponse = await this.bookService.addChapter(bookId, title, link);
   }
 
