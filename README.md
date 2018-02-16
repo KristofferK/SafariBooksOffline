@@ -15,7 +15,7 @@ This is for educational purposes only.
 
 ## The journey
 This project is going to be all about the journey, and not so much about the destination.
-We'll try to document the journey through a diary and of course through our Git commits. Maybe someday we'll make a blog, where the journey can me documented more thorough.
+We'll try to document the journey through a diary and of course through our Git commits. Maybe someday we'll make a blog, where the journey can be documented more thorough.
 
 ## Decisions, decisions
 Backend language and framework. We've thought of four different langauges/frameworks, that we see suitable for this small project.
