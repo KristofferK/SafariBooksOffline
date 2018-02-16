@@ -29,11 +29,13 @@ ASP.NET Core MVC and Node.js with TypeScript seems like great candidates. We how
 For frontend we've decided to use Angular(5) as our view engine. This is mainly because we've positive experience with Angular.
 
 ## Implemented
-* Nothing
-
-## To be implemented
 * Load local HTML file in an asynchronous manner.
 * Format the text paragraphs in a way that makes reading faster.
+* Get a list of downloaded chapters
+* Load a downloaded chapter into the view.
+
+## To be implemented
+* Show images from the chapter.
 * Somehow show the user how far he is in the chapter, since we won't have page numbers.
 * Download chapters to local storage through the website for offline use. We decide not to download the images, despite this resulting in us not being able to see them without internet access.
   * This could be implemented in a way, where the website itself registers a new account.
@@ -43,5 +45,3 @@ For frontend we've decided to use Angular(5) as our view engine. This is mainly 
   * Or it could be implemented in a way, where the user himself has to enter his credentials. In this case the website must be able to
     * Log into the users account, and
     * Download the HTML source for the user-specified chaper.
-* Get a list of downloaded chapters
-* Load a download chapter into the view.
