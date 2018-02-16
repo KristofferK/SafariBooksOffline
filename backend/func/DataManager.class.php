@@ -24,6 +24,49 @@ class DataManager
         return json_decode(file_get_contents($this->mapPath), true);
     }
     
+    public function addBook(string $bookTitle): string {
+        $bookTitle = trim($bookTitle);
+        if (strlen($bookTitle) < 4 || strlen($bookTitle) > 64) {
+            throw new Exception('Please specify a title between 4 and 64 characters.');
+        }
+        
+        $bookId = md5($bookTitle);
+        if ($this->isBookIdTaken($bookId)) {
+            throw new Exception('The specified book title is taken.');
+        }
+        
+        $map = $this->getMap();
+        $map[] = ['id' => $bookId, 'title' => $bookTitle, 'chapters' => []];
+        file_put_contents($this->mapPath, json_encode($map));
+        return $bookId;
+    }
+    
+    private function isBookIdTaken(string $bookId): bool {
+        try {
+            $book = $this->getBookDetails($bookId);
+            return true;
+        }
+        catch (Exception $e) {
+            return false;
+        }
+    }
+    
+    public function saveChapter(string $bookId, string $chapterReference, string $chapterTitle, string $chapterLink, string $chapterSource) {
+        $path = $this->downloadsDirectory.$chapterReference.'.html';
+        file_put_contents($path, $chapterSource);
+        $map = $this->getMap();
+        $i = 0;
+        foreach ($map as $book) {
+            if ($book['id'] == $bookId) {
+                $map[$i]['chapters'][] = ['title' => $chapterTitle, 'url' => $chapterLink, 'dateDownloaded' => time(), 'reference' => $chapterReference];
+                file_put_contents($this->mapPath, json_encode($map));
+                return true;
+            }
+            $i++;
+        }
+        throw new Exception('Unexpected error. The chapter couldn\'t be saved');
+    }
+    
     public function getBookList(): array {
         $map = $this->getMap();
         $bookList = [];

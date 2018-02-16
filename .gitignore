@@ -2,3 +2,10 @@ backend/local-storage/downloads/*.html
 backend/local-storage/map.json
 frontend/node_modules/*
 frontend/dist/*
+backend/*.html
+backend/*.js
+backend/*.css
+backend/*.ico
+backend/func/web_client_cookie.*
+backend/func/safari_books_online_credentials.json
+backend/3rdpartylicenses.txt
