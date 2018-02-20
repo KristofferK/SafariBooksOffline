@@ -11,14 +11,6 @@
   font-size:1.18em;
 }
 
-#source div.sidebar {
-  border: 1px dotted #ddd;
-  padding: 1em 2em!important;
-  background-color: #eee;
-  box-shadow: 0 5px 10px #eee;
-  margin: 0.5em!important;
-}
-
 #source p {
   line-height: 1.65em!important;
   margin: .75em 0 1.25em!important;
@@ -33,11 +25,4 @@
   margin: 1.5em 0 .35em!important;
   background-color: transparent;
   word-wrap: break-word;
-}
-
-#source p.exprogramlisting {
-  font-family: monospace;
-  font-size: 0.9em;
-  background: #eee;
-  padding: 0.5em;
 }

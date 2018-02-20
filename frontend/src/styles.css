@@ -1,3 +1,24 @@
 body {
   background: rgb(82, 86, 89) !important;
 }
+
+
+#source div.sidebar, #source div.sidebar1, #source div.sidebarpara {
+  border: 1px dotted #ddd;
+  padding: 1em 2em!important;
+  background-color: #eee;
+  box-shadow: 0 5px 10px #eee;
+  margin: 0.5em!important;
+}
+
+#source p.exprogramlisting {
+  font-family: monospace;
+  font-size: 0.9em;
+  background: #eee;
+  padding: 0.5em;
+}
+
+
+#source hr {
+  display: none;
+}
