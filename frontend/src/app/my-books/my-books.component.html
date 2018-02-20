@@ -38,4 +38,29 @@
       </div>
     </div>
   </div>
+
+  <div *ngIf="selectedChapter" class="row" id="chapter-info">
+    <div class="col-12 col-md-8 offset-md-2 text-center">
+      <div class="table-responsive">
+        <table class="table table-dark">
+          <tr>
+            <th>Title</th>
+            <td>{{selectedChapter.title}}</td>
+          </tr>
+          <tr>
+            <th>Link</th>
+            <td><a [href]="selectedChapter.url" target="_blank">{{selectedChapter.url}}</a></td>
+          </tr>
+          <tr>
+            <th>Downloaded</th>
+            <td>{{selectedChapter.dateDownloaded}}</td>
+          </tr>
+          <tr>
+            <th>ID</th>
+            <td>{{selectedChapter.reference}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
