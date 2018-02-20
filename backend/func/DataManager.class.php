@@ -128,6 +128,8 @@ class DataManager
         
         if (stripos($source, '<div class="t-sbo-prev sbo-prev sbo-nav-bottom') !== false)
             $source = explode('<div class="t-sbo-prev sbo-prev sbo-nav-bottom', $source)[0];
+        
+        $source = preg_replace('~<img src="/library/view([^"]+)" alt="Image" width="[0-9]+" height="[0-9]+"~', '<img src="https://www.safaribooksonline.com/library/view$1" class="img-fluid"', $source);
 
         return $source;
     }
